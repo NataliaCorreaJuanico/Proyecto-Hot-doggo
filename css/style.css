@@ -13,8 +13,8 @@ html{
 body {
     margin:0;
     font-family:"Playfair Display", serif;
-    color:rgb(77, 134, 181);
-    background-color: rgb(223, 65, 97);
+    color:#99362d;
+    background-color: rgb(239, 235, 181);
     overflow-x: hidden;
 }
 
@@ -37,7 +37,7 @@ body {
     position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(169, 191, 215, 0.92);
+  background: rgba(241, 224, 74, 0.92);
   backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--line);
 }
@@ -58,7 +58,7 @@ body {
   font-family: 'Playfair Display', serif;
   font-weight: 700;
   font-size: 1.1rem;
-  color: rgb(31, 103, 150);
+  color: rgb(58, 118, 203);
   text-decoration:none;
 }
 
@@ -94,7 +94,7 @@ a{
 }
 
 .main-nav a:hover {
-    color:rgb(160, 70, 42)
+    color:rgb(233, 214, 73)
 }
 
 .menu-toggle {
@@ -103,8 +103,8 @@ a{
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    border: 1px solid rgb(220, 126, 126);
-    background: #93b2eb;
+    border: 1px solid rgb(232, 219, 188);
+    background: #e22f22;
     color: var(--coral-dark);
     font-size: 1.2rem;
     cursor: pointer;
@@ -113,8 +113,8 @@ a{
   .mobile-nav {
     max-height: 0;
     overflow: hidden;
-    border-top: 1px solid cornflowerblue;
-    background: red;
+    border-top: 1px solid rgb(231, 63, 44);
+    background: rgb(231, 223, 180);
     transition: max-height .28s ease;
   }
   .mobile-nav.open { max-height: 360px; }
@@ -128,3 +128,75 @@ a{
     .menu-toggle, .mobile-nav { display: none; }
   }
 
+.carousel-section .container {
+    padding: 2rem 0;
+    text-align: center;
+    max-width:1500px;
+    margin: 0 auto;
+    overflow: hidder;
+}
+
+.carousel-track {
+    display:flex;
+    width: 100%;
+    transition: transform 0.5s ease-in out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    flex: 0 0 100%;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .carousel-section.container {
+        width: calc(100% - 24px);
+    }
+    .carousel-slide {
+        height: 260px;
+    }
+}
+
+/*footer */
+
+.footer-social {
+    background: var(--bg);
+    padding: 1.5rem 0;
+  }
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+  }
+  .social-icons a {
+    width: 44px;
+    height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(122, 53, 93, 0.1);
+    color: var(--primary-dark);
+    transition: background 0.2s ease, transform 0.2s ease;
+  }
+  .social-icons a:hover {
+    background: var(--primary);
+    color: var(--light);
+    transform: translateY(-2px);
+  }
+  .footer-bottom {
+    background: #2a1f2f;
+    color: var(--light);
+    text-align: center;
+    padding: 1rem 0;
+  }

@@ -13,10 +13,12 @@
     <meta name="author" content="Natalia Correa">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<!--FGoogle Fonts: Bricolage Grotesque-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 
+    <!--Archivo de Estilos Externo-->
     <link rel="stylesheet" href="css/style.css">
 <title>HOT DOGGO|Food truck </title>
 <!-- El tag de title es para como quiero que se muestre en la web-->
@@ -55,17 +57,18 @@
 
   </nav>
 
-  <button id="menu-toggle" class="menu-toggle" 
-  aria-label="Abrir menú" aria-expanded="false" 
-  aria-controls="mobile-menu">☰</button>
+  <!-- Botón Menú movil-->
+  <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+    <i class="fa-solid fa-bars"></i>
+</button>
 </div>
 
+<!-- Navegación Móvil-->
   <nav id="mobile-menu" class="mobile-nav">
    
     <ul>
         <li>
-            <a href="#inicio">Inicio</a>
-           </li>
+            <a href="#inicio">Inicio</a></li>
 
            <li>
             <a href="#servicios">Servicios</a>
@@ -86,32 +89,123 @@
 
  </header>
 
+ <!--INICIO MAIN (PRINCIPAL) del DESARROLLO WEB-->
+
     <main>
-        <!-- SECCIÓN CARRUSEL-->
+        <!--HERO/ CARRUSEL INTERACTIVO DE 3 IMAGENES-->
         
-        <section id="carrusel" class="carousel-section container">
-           <h2>Un buen antojo,un buen día</h2>
+        <section id="Inicio" class="hero-section">
            <div class="carousel-track" id="carouseltrackebc">
-         <!--Primera imagen hero-->
+        
+            <!--Diapositiva 1 (Tu Branding)-->
             <div class="carousel-slide">
                 <img src="img/hero1.jpg" alt="imagen Hot Doggo hero">
+
+                <div class="slide-overlay">
+                  <span class="badge">Experiencia Premium</span>
+                  <h1>Promociones <span class="highlight-yellow">Horarios</span></h1>
+                  <p>Pregunta por las promociones del mes/ abiertos de martes a viernes de 1:00 pm a 9:00 pm .</p>
+                  <a href="#servicios" class="btn-hero">Descubrir servicios</a>
+              </div>
             </div>
          <!--Segunda imagen hero-->
               <div class="carousel-slide">
                 <img src="img/hero2.jpg" alt="imagen Hot Doggo hero">
+
+                <div class="slide-overlay">
+                  <span class="badge">Experiencia Premium</span>
+                  <h1>Hot Doggos <span class="highlight-yellow">Menú</span></h1>
+                  <p>Pregunta por nuestro extenso menú lleno de diferentes toppings y sodas.</p>
+                  <a href="#servicios" class="btn-hero">Descubrir servicios</a>
+              </div>
             </div>
         <!-- Tercera imagen hero-->
             <div class="carousel-slide">
                 <img src="img/hero3.jpg" alt="imagen Hot Doggo hero">
+
+                <div class="slide-overlay">
+                  <span class="badge">Experiencia Premium</span>
+                  <h1>Hot Doggs <span class="highlight-yellow">De carrito</span></h1>
+                  <p>Tranformamos una salchicha en una experiencia unica y deliciosa.</p>
+                  <a href="#servicios" class="btn-hero">Descubrir servicios</a>
+              </div>
             </div>
 
 
         </div>
 
+        <!-- Botones de Navegación del Carrusel -->
+        <button id="btn-prev" class="carousel-arrow prev" aria-label="Imagen anterior">
+          <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <button id="btn-next" class="carousel-arrow next" aria-label="Imagen siguiente">
+          <i class="fa-solid fa-chevron-right"></i>
+      </button>
+
+      <!-- Puntos Indicadores -->
+      <div class="carousel-dots" id="carousel-dots">
+        <button class="dot active" aria-label="Ir a diapositiva 1"></button>
+        <button class="dot" aria-label="Ir a diapositiva 2"></button>
+        <button class="dot" aria-label="Ir a diapositiva 3"></button>
+    </div>
+
 
      </section>
 
- <p>This is a paragraph.</p>
+     <!-- SECCIÓN DE SERVICIOS -->
+     <section id="servicios" class="servicios-section">
+      <div class="container">
+          <div class="section-title">
+              <h2>NUESTROS SERVICIOS</h2>
+              <h3>Soluciones de Entretenimiento en Casa</h3>
+          </div>
+
+          <div class="cards-grid">
+            <div class="card">
+                <div class="card-icon yellow"><i class="fa-solid fa-couch"></i></div>
+                <h4>Hot Dogs Clásicos</h4>
+                <p>Disfruta el sabor tradicional con salchichas deliciosas,pan suave y tus aderezos favoritos.</p>
+            </div>
+
+            <div class="card">
+              <div class="card-icon red"><i class="fa-solid fa-volume-high"></i></div>
+              <h4>Hot Dogs especiales</h4>
+              <p>Descubre combinaciones irresistibles con tocino,queso,jalapeños y muchos ingredientes más.</p>
+          </div>
+
+          <div class="card">
+            <div class="card-icon yellow"><i class="fa-solid fa-microchip"></i></div>
+            <h4>Combos y promociones</h4>
+            <p>Acompaña tus hot dogs con papitas fritas y bebidas a precios especiales .</p>
+           </div>
+        </div>
+        </div>
+        </section>
+
+        <!-- SECCIÓN NOSOTROS -->
+        <section id="nosotros" class="nosotros-section">
+          <div class="container nosotros-inner">
+              <div class="nosotros-img">
+                  <img src="img/producto1.jpg" alt="Experiencia cine en familia">
+              </div>
+              <div class="nosotros-info">
+                  <h2>SOBRE NOSOTROS</h2>
+                  <h3>Apasionados por  los Hot Dogs jumbo con papitas.</h3>
+                  <p>En <strong>Hot Doggo</strong>, bajo el sazón de Natalia Correa, Creamos deliciosos hot doggs echos con ingredientes de la mejor calidad,acompañados de los toppings que gustes y una rica soda.</p>
+                  <p>Brindamos un ampleo menú para que eligas el hot doggo que más se te antoje y nos acoplamos a los gustos de los clientes.</p>
+                  <div class="stats">
+                      <div class="stat-box">
+                          <span class="stat-num yellow">+150</span>
+                          <span class="stat-lbl">Proyectos</span>
+                      </div>
+                      <div class="stat-box">
+                          <span class="stat-num red">100%</span>
+                          <span class="stat-lbl">Satisfacción</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
 
     </main>
 
@@ -143,6 +237,7 @@
 
       </footer>
 
+<!--Archivo de JavaScript Externo-->
       <script src="js/script.js"></script>
 
 </body>
